@@ -30,7 +30,7 @@ export const Home = () => {
       <Navbar />
       <section className='firstsection '>
         <div className='firstsectioncontainerone'>
-          <h3 className='firstsectioncontaineroneHeader'>Malaysia First <br />Treasure Hunt Event</h3>
+          {/* <h3 className='firstsectioncontaineroneHeader'>Malaysia First <br />Treasure Hunt Event</h3> */}
           <br />
 
           <h3 className='firstsectioncontainertwoHeader'>Existing Rewards Worth <br /></h3>
@@ -49,7 +49,7 @@ export const Home = () => {
       </section>
 
       <section className='secondsection'>
-        <div className='secondcontainerone'>
+        <div className='secondcontainerone mb-5'>
           <Swiper
             slidesPerView={3}
             spaceBetween={0}
@@ -68,18 +68,62 @@ export const Home = () => {
             <SwiperSlide><NewsPromotionCard data1={{ imgSrc: Three, by: 'Post by:Admin', date: '20 August 2022', title: 'What is a treasure hunt and how does it work?', description: 'You set up a treasure hunt by hiding clues and the treasure. The clues can be simple drawings.' }} /></SwiperSlide>
           </Swiper>
         </div>
-      </section>
-
-      <section className='thirdsection'>
-        <img className='thirdsection-AppDemo' src={AppDemo} />
-        <div className='thirdsection-description'>
-          <img className='thirdsection-HuntLogo' src={HuntLogo} />
-          <h3 className='thirdsection-h'>Download it Now! <br /> Start Your Hunt!</h3>
-          <p className='thirdsection-p'>Shopping spress are now so much easier, with the world's top brands at your fingertips. Simply click and go to discover the best finds in fashion, electronics, homeware, and more! </p>
-          <button>Get it on Google Play</button>
-          <button>Get it on App Store</button>
+        <div class="text-center p-3 pt-5">
+          <button
+            type="button"
+            class="btn btn-outline-light"
+            style={{ fontWeight: 500, fontSize: '24px', padding: '0.5rem 2.5rem' }}
+          >
+            See All
+          </button>
         </div>
       </section>
+
+
+      <section
+        className="h-100 w-100"
+        style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a' }}
+      >
+
+        <div
+          className="container-xxl mx-auto p-0 position-relative header-2-3"
+          style={{ fontFamily: 'Poppins, sans-serif' }}
+        >
+          <div>
+            <div className="mx-auto d-flex flex-lg-row flex-column hero">
+              <div
+                className="left-column text-center d-flex justify-content-center pe-0 "
+              >
+                <img
+                  id="leftcolumn-image"
+                  className="island-image-hunt h-auto"
+                  src={AppDemo}
+                  style={{ width: '95%' }}
+                  alt="island"
+                />
+              </div>
+
+              <div
+                className="right-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center"
+              >
+                <div className='thirdsection-description'>
+                  <img className='thirdsection-HuntLogo' src={HuntLogo} alt='logo' />
+                  <h3 className='thirdsection-h'>Download it Now! <br /> Start Your Hunt!</h3>
+                  <p className='thirdsection-p'>Shopping spress are now so much easier, with the world's top brands at your fingertips. Simply click and go to discover the best finds in fashion, electronics, homeware, and more! </p>
+                  <button>Get it on Google Play</button>
+                  <button>Get it on App Store</button>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
       <Footer />
     </body>
   );

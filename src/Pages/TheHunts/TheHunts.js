@@ -72,11 +72,11 @@ export default function TheHunts() {
                                                                         With supporting text below as a natural
                                                                         lead-in to additional content.
                                                                     </p>
-                                                                    <div class="text-center">
+                                                                    <div class="text-center button-cta">
                                                                         <button
                                                                             type="button"
                                                                             class="btn btn-light"
-                                                                            style={{ fontWeight: 500, fontSize: '18px' }}
+                                                                            style={{ fontWeight: 500, fontSize: '18px', marginRight: '1rem' }}
                                                                         >
                                                                             Join Hunt
                                                                         </button>
@@ -124,7 +124,7 @@ export default function TheHunts() {
                                                                         <button
                                                                             type="button"
                                                                             class="btn btn-light"
-                                                                            style={{ fontWeight: 500, fontSize: '18px' }}
+                                                                            style={{ fontWeight: 500, fontSize: '18px', marginRight: '1rem' }}
                                                                         >
                                                                             Join Hunt
                                                                         </button>
@@ -171,7 +171,7 @@ export default function TheHunts() {
                                                                         <button
                                                                             type="button"
                                                                             class="btn btn-light"
-                                                                            style={{ fontWeight: 500, fontSize: '18px' }}
+                                                                            style={{ fontWeight: 500, fontSize: '18px', marginRight: '1rem' }}
                                                                         >
                                                                             Join Hunt
                                                                         </button>
@@ -221,7 +221,7 @@ export default function TheHunts() {
                                                                         <button
                                                                             type="button"
                                                                             class="btn btn-light"
-                                                                            style={{ fontweight: 500, fontsize: '18px' }}
+                                                                            style={{ fontWeight: 500, fontSize: '18px', marginRight: '1rem' }}
                                                                         >
                                                                             Join Hunt
                                                                         </button>
@@ -267,7 +267,7 @@ export default function TheHunts() {
                                                                         <button
                                                                             type="button"
                                                                             class="btn btn-light"
-                                                                            style={{ fontweight: 500, fontsize: '18px' }}
+                                                                            style={{ fontWeight: 500, fontSize: '18px', marginRight: '1rem' }}
                                                                         >
                                                                             Join Hunt
                                                                         </button>
@@ -313,7 +313,7 @@ export default function TheHunts() {
                                                                         <button
                                                                             type="button"
                                                                             class="btn btn-light"
-                                                                            style={{ fontweight: 500, fontsize: '18px' }}
+                                                                            style={{ fontWeight: 500, fontSize: '18px', marginRight: '1rem' }}
                                                                         >
                                                                             Join Hunt
                                                                         </button>
@@ -364,7 +364,7 @@ export default function TheHunts() {
                                                                         <button
                                                                             type="button"
                                                                             class="btn btn-light"
-                                                                            style={{ fontweight: 500, fontsize: '18px' }}
+                                                                            style={{ fontWeight: 500, fontSize: '18px', marginRight: '1rem' }}
                                                                         >
                                                                             Join Hunt
                                                                         </button>
@@ -410,7 +410,7 @@ export default function TheHunts() {
                                                                         <button
                                                                             type="button"
                                                                             class="btn btn-light"
-                                                                            style={{ fontweight: 500, fontsize: '18px' }}
+                                                                            style={{ fontWeight: 500, fontSize: '18px', marginRight: '1rem' }}
                                                                         >
                                                                             Join Hunt
                                                                         </button>
@@ -457,7 +457,7 @@ export default function TheHunts() {
                                                                         <button
                                                                             type="button"
                                                                             class="btn btn-light"
-                                                                            style={{ fontweight: 500, fontsize: '18px' }}
+                                                                            style={{ fontWeight: 500, fontSize: '18px', marginRight: '1rem' }}
                                                                         >
                                                                             Join Hunt
                                                                         </button>

@@ -1,114 +1,110 @@
 /* Swiper */
 .swiper-button-next {
-    right: 0%;
-    color: #000 !important;
-    fill: black !important;
-    stroke: black !important;
-    background-color: white;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    
+	right: 0%;
+	color: #000 !important;
+	fill: black !important;
+	stroke: black !important;
+	background-color: white;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	box-sizing: border-box;
 }
 
 .swiper-button-prev {
-    left: 0%;
-    color: #000 !important;
-    fill: black !important;
-    stroke: black !important;
-    background-color: white;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-sizing: border-box;
+	left: 0%;
+	color: #000 !important;
+	fill: black !important;
+	stroke: black !important;
+	background-color: white;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	box-sizing: border-box;
 }
-
-
-
 
 /* FirstSection */
-.firstsection{
-    background-color: #2a2a2a;
-    background-image: url(../../SVG/MalaysiaMap.svg);
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-size: cover;
-    background-position: -100%;
-    padding-bottom: 5%;
-    background-size: 120%;
+.firstsection {
+	background-color: #2a2a2a;
+	background-image: url(../../SVG/MalaysiaMap.svg);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-size: cover;
+	background-position: -100%;
+	padding-bottom: 5%;
+	background-size: 120%;
 }
 
-.firstsectioncontaineroneHeader{
-    margin-top: 2%;
-    margin-left: 5%;
-    font-size: 20px;
-    font-family: 'Arimo', sans-serif;
-    color: white;
+.firstsectioncontaineroneHeader {
+	margin-top: 2%;
+	margin-left: 5%;
+	font-size: 20px;
+	font-family: "Arimo", sans-serif;
+	color: white;
 }
 
-.firstsectioncontainertwoHeader{
-    margin-top: 20%;
-    margin-left: 5%;
-    color: white;
-    font-size: 26px;
-    font-family: 'Arimo', sans-serif;
+.firstsectioncontainertwoHeader {
+	margin-top: 20%;
+	margin-left: 5%;
+	color: white;
+	font-size: 26px;
+	font-family: "Arimo", sans-serif;
 }
 
-.firstsectioncontainerthreeHeader{
-    margin-left: 5%;
-    color: white;
-    font-size: 50px;
-    font-family: 'Arimo', sans-serif;
+.firstsectioncontainerthreeHeader {
+	margin-left: 5%;
+	color: white;
+	font-size: 50px;
+	font-family: "Arimo", sans-serif;
 }
 
-.firstsectioncontainerfourImgOne{
-    width: 25rem;
-    margin-left: 2.2%;
-    margin-top: -1.9%;
+.firstsectioncontainerfourImgOne {
+	width: 25rem;
+	margin-left: 2.2%;
+	margin-top: -1.9%;
 }
 
-.firstsectioncontainerfourImgTwo{
-    width: 20rem;
-    margin-left: 5%;
-    margin-top: 2%;
+.firstsectioncontainerfourImgTwo {
+	width: 20rem;
+	margin-left: 5%;
+	margin-top: 2%;
 }
 
-.firstsectioncontainerfive{
-    text-align:center ;
-    width: 35rem!important;
-    float: right;
-    margin-right: 5%!important;
-    margin-top: -35%!important;
-    background-color: transparent;
+.firstsectioncontainerfive {
+	text-align: center;
+	width: 35rem !important;
+	float: right;
+	margin-right: 5% !important;
+	margin-top: -35% !important;
+	background-color: transparent;
 }
 
-.product-card-location{
-    text-align: center;
-    padding-left: 20%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+.product-card-location {
+	text-align: center;
+	padding-left: 20%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 .product-card-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%!important;
-    border-radius: 10%!important;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80% !important;
+	border-radius: 10% !important;
 }
 
-.product-card-title{
-    text-align: center;
-    color: #fcc018;
+.product-card-title {
+	text-align: center;
+	color: #fcc018;
 }
 
-.product-card-description{
-    text-align: center;
+.product-card-description {
+	text-align: center;
 }
 
-.product-btnContainer{
-    margin-bottom: 10%;
+.product-btnContainer {
+	margin-bottom: 10%;
 }
 
 /* .product-card-buybtn {
@@ -119,95 +115,86 @@
     
   } */
 
-  
-
 /* SecondSection */
-.secondsection{
-    background-color: #2a2a2a;
-    overflow: hidden;
-    padding-bottom: 10%;
+.secondsection {
+	background-color: #2a2a2a;
+	overflow: hidden;
+	padding-bottom: 10%;
 }
 
-.secondcontainerone{
-    width: 118.9rem;
-    margin-top: 10%;
-    background-color: transparent;
+.secondcontainerone {
+	width: 118.9rem;
+	margin-top: 10%;
+	background-color: transparent;
 }
 
-.np-card-image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 24rem!important;
-    height: 21rem;
-    border-radius: 10%!important;
+.np-card-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 24rem !important;
+	height: 21rem;
+	border-radius: 10% !important;
 }
 
-.np-card-by{
-    padding-left: 17%;
-    opacity: 0.5;
-    font-family: 'Arimo', sans-serif;
+.np-card-by {
+	padding-left: 17%;
+	opacity: 0.5;
+	font-family: "Arimo", sans-serif;
 }
 
-.np-card-date{
-    padding-left: 63%;
-    margin-top: -7%;
-    opacity: 0.5;
-    font-family: 'Arimo', sans-serif;
+.np-card-date {
+	padding-left: 63%;
+	margin-top: -7%;
+	opacity: 0.5;
+	font-family: "Arimo", sans-serif;
 }
 
-.np-card-title{
-    padding-left: 17%;
-    font-family: 'Arimo', sans-serif;
-    width: 30rem;
+.np-card-title {
+	padding-left: 17%;
+	font-family: "Arimo", sans-serif;
+	width: 30rem;
 }
 
-.np-card-description{
-    padding-left: 17%;
-    opacity: 0.5;
-    width: 30rem;
-    font-family: 'Arimo', sans-serif;
+.np-card-description {
+	padding-left: 17%;
+	opacity: 0.5;
+	width: 30rem;
+	font-family: "Arimo", sans-serif;
 }
 
-.np-readmorebtn{
-    padding-left: 18.5%;
-    color: #fcc018;
-    font-family: 'Arimo', sans-serif;
+.np-readmorebtn {
+	padding-left: 18.5%;
+	color: #fcc018;
+	font-family: "Arimo", sans-serif;
 }
-
-
-
 
 /* ThirdSection */
-.thirdsection{
-    background-color: #2a2a2a;
-    overflow: hidden;
+.thirdsection {
+	background-color: #2a2a2a;
+	overflow: hidden;
 }
 
-.thirdsection-AppDemo{
-    width: 55rem;
-    margin-left: 4%;
-    margin-top: 5%;
+.thirdsection-AppDemo {
+	width: 55rem;
+	margin-left: 4%;
+	margin-top: 5%;
 }
 
-.thirdsection-HuntLogo{
-    width: 24rem;
+.thirdsection-HuntLogo {
+	width: 24rem;
 }
 
-.thirdsection-h{
-    font-size: 55px;
+.thirdsection-h {
+	font-size: 55px;
 }
 
-.thirdsection-description{
-    float: right;
-    width: 60rem;
-    margin-top: -33%;
-    padding-left: 3%;
-    color:white;
+.thirdsection-description {
+	width: 60rem;
+	padding-left: 3%;
+	color: white;
 }
 
-.thirdsection-p{
-    width: 30rem;
+.thirdsection-p {
+	width: 30rem;
 }
-
-

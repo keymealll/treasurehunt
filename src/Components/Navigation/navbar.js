@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
     return (
         <div className="h-100 w-100 pb-3" style={{ boxsizing: 'border-box', backgroundColor: '#2a2a2a', }}>
-            <div className="container-xxl mx-auto p-0 position-relative header-2-3" style={{ fontFamily: 'Poppins, sans-serif' }}>
+            <div className="container-xxl mx-auto p-0 position-relative header-2" style={{ fontFamily: 'Poppins, sans-serif' }}>
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <Link to='/'>
                         <img
@@ -67,9 +67,13 @@ export default function Navbar() {
                                         <li className="nav-item">
                                             <Link className="nav-link" to="/about">Who is IEC</Link>
                                         </li>
-                                        <li className="nav-item active">
-                                            <Link className="nav-link" to="/news" style={{ color: '#e7e7e8' }}
+                                        <li className="nav-item">
+                                            <Link className="nav-link" to="/thehunts"
                                             >The Hunts</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link" to="/news"
+                                            >News & Promotion</Link>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link" href="#">Enquiry</a>
@@ -96,8 +100,12 @@ export default function Navbar() {
                                 <Link className="nav-link" to='/about'>Who is IEC</Link>
                             </li>
                             <li className="nav-item active">
-                                <Link className="nav-link" to='/news' style={{ color: '#e7e7e8' }}
+                                <Link className="nav-link" to='/thehunts'
                                 >The Hunts</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to='/news'
+                                >News & Promotion</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/enquiry">Enquiry</a>
