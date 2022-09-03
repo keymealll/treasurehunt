@@ -6,16 +6,16 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
-        <div className="h-100 w-100 pb-5" style={{ boxsizing: 'border-box', backgroundColor: '#2a2a2a', }}>
+        <div className="h-100 w-100 pb-3" style={{ boxsizing: 'border-box', backgroundColor: '#2a2a2a', }}>
             <div className="container-xxl mx-auto p-0 position-relative header-2-3" style={{ fontFamily: 'Poppins, sans-serif' }}>
                 <nav className="navbar navbar-expand-lg navbar-dark">
-                    <a href="#">
+                    <Link to='/'>
                         <img
                             style={{ marginRight: '0.75rem', width: '7.5rem' }}
                             src={Logo}
                             alt="logo-iec"
                         />
-                    </a>
+                    </Link>
                     <button
                         className="navbar-toggler border-0"
                         type="button"
@@ -100,7 +100,7 @@ export default function Navbar() {
                                 >The Hunts</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Enquiry</a>
+                                <a className="nav-link" href="/enquiry">Enquiry</a>
                             </li>
                         </ul>
                         <div className="gap-3">
