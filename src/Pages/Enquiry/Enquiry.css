@@ -1,0 +1,90 @@
+.enquirybody{
+    background-color: #2a2a2a;
+    overflow: hidden;
+}
+
+.enquiryfirstcontainer{
+    color: white;
+    font-family: 'Arimo', sans-serif;
+    margin-top: 7%;
+    margin-left: 15%;
+    width: 45rem;
+    background-color: transparent;
+}
+
+.enquiryfirstprg{
+    width: 23rem;
+}
+
+.enquirysecondprg{
+    margin-top: 20%;
+}
+
+.enquirysecondcontainer{
+    max-width: 44rem;
+    width: 100%;
+    background-color: transparent;
+    float: right;
+    margin-top: -23%;
+    margin-right: 13%;
+    color: white;
+}
+
+.content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+    margin-bottom: 7%;
+    width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details{
+    display: block;
+    margin-bottom: 2%;
+}
+
+.user-details .input-box input{
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    color: white;
+}
+
+.user-details .input-box select{
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    color: grey;
+}
+
+ .input-box .select .option{
+    background-color: transparent;
+}
+
+.input-boxM{
+    margin-bottom: 7%;
+    width: calc(100% / 1 - 20px);
+}
+
+.detailsM{
+    display: block;
+    margin-bottom: 2%;
+}
+
+.input-boxM input{
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    color: white;
+}
+
+

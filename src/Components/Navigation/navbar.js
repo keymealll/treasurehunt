@@ -80,7 +80,7 @@ export default function Navbar() {
                                     className="modal-footer border-0 gap-3"
                                     style={{ padding: '2rem', paddingTop: '0.75rem' }}
                                 >
-                                    <button className="btn btn-default btn-no-fill">Log In</button>
+                                    <Link className="btn btn-default btn-no-fill" to='/login'>Log In</Link>
                                     <button className="btn btn-fill border-0">Join The Hunt</button>
                                 </div>
                             </div>
@@ -105,7 +105,7 @@ export default function Navbar() {
                         </ul>
                         <div className="gap-3">
                             <button className="btn btn-fill border-0">Join The Hunt</button>
-                            <button className="btn btn-default btn-no-fill">Log In</button>
+                            <Link className="btn btn-default btn-no-fill" to='/login'>Log In</Link>
                         </div>
                     </div>
                 </nav>
