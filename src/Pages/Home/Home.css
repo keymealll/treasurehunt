@@ -116,17 +116,6 @@
   } */
 
 /* SecondSection */
-.secondsection {
-	background-color: #2a2a2a;
-	overflow: hidden;
-	padding-bottom: 10%;
-}
-
-.secondcontainerone {
-	width: 118.9rem;
-	margin-top: 10%;
-	background-color: transparent;
-}
 
 .np-card-image {
 	display: block;
@@ -134,11 +123,10 @@
 	margin-right: auto;
 	width: 24rem !important;
 	height: 21rem;
-	border-radius: 10% !important;
+	border-radius: 16px !important;
 }
 
 .np-card-by {
-	padding-left: 17%;
 	opacity: 0.5;
 	font-family: "Arimo", sans-serif;
 }
@@ -151,15 +139,12 @@
 }
 
 .np-card-title {
-	padding-left: 17%;
 	font-family: "Arimo", sans-serif;
 	width: 30rem;
 }
 
 .np-card-description {
-	padding-left: 17%;
 	opacity: 0.5;
-	width: 30rem;
 	font-family: "Arimo", sans-serif;
 }
 

@@ -48,8 +48,9 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className='secondsection'>
-        <div className='secondcontainerone mb-5'>
+      {/* Carousel */}
+      <section className="h-100 w-100" style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '6rem' }}>
+        <div className="content-2-5 container-xxl mx-auto p-0 position-relative" style={{ fontFamily: 'Poppins, sans-serif' }}>
           <Swiper
             slidesPerView={3}
             spaceBetween={0}
@@ -68,7 +69,7 @@ export const Home = () => {
             <SwiperSlide><NewsPromotionCard data1={{ imgSrc: Three, by: 'Post by:Admin', date: '20 August 2022', title: 'What is a treasure hunt and how does it work?', description: 'You set up a treasure hunt by hiding clues and the treasure. The clues can be simple drawings.' }} /></SwiperSlide>
           </Swiper>
         </div>
-        <div class="text-center p-3 pt-5">
+        <div className="text-center p-3 pt-5">
           <button
             type="button"
             class="btn btn-outline-light"
@@ -79,10 +80,10 @@ export const Home = () => {
         </div>
       </section>
 
-
+      {/* thirdsection */}
       <section
         className="h-100 w-100"
-        style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a' }}
+        style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '6rem' }}
       >
 
         <div
@@ -121,8 +122,6 @@ export const Home = () => {
 
         </div>
       </section>
-
-
 
       <Footer />
     </body>

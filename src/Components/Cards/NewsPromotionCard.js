@@ -14,14 +14,20 @@ const NewsPromotionCard = props => {
           text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
           style={{ backgroundColor: 'transparent', border: 'none' }}
           className="m-2">
-          <Card.Img className='np-card-image' src={imgSrc} />
-          <Card.Body>
-            <Card.Text className='np-card-by'>{by}</Card.Text>
-            <Card.Text className='np-card-date'>{date}</Card.Text>
-            <Card.Text className='np-card-title'>{title}</Card.Text>
-            <Card.Text className='np-card-description'>{description}</Card.Text>
-          </Card.Body>
-          <a class="np-readmorebtn" href="#">Read More {'>'}</a>
+          <div class="card">
+            <div class="card-body">
+              <Card.Img className='np-card-image' src={imgSrc} />
+              <div class="clearfix mb-3 mt-3">
+                <span className='np-card-by float-start'>{by}</span>
+                <span className='np-card-date float-end'>{date}</span>
+              </div>
+              <p class="card-text">{title}</p>
+              <Card.Text className='np-card-description'>{description}</Card.Text>
+              <a class="read-more float-end" href="#">
+                Read More
+              </a>
+            </div>
+          </div>
         </Card>
       ))
       }
