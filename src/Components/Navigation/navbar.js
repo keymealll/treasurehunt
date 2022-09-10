@@ -3,6 +3,8 @@ import React from 'react'
 import '../Navigation/navbar.css'
 import Logo from '../Navigation/IECLogo.png'
 import { Link } from 'react-router-dom'
+import usericon from '/Users/abdullahkamil/Documents/IUKL/Project/treasurehunt/src/SVG/user account icon.svg'
+
 
 export default function Navbar() {
     return (
@@ -111,13 +113,18 @@ export default function Navbar() {
                                 <a className="nav-link" href="/enquiry">Enquiry</a>
                             </li>
                         </ul>
-                        <div className="gap-3">
-                            <button className="btn btn-fill border-0">Join The Hunt</button>
-                            <Link className="btn btn-default btn-no-fill" to='/login'>Log In</Link>
+                        <div className='container-fluid' style={{ width: '19rem', }}>
+                            <button className="btn btn-fill border-0" style={{ marginRight: '2rem', }}>Join The Hunt</button>
+                            <Link className='login' to='/login'><img
+                                src={usericon}
+                                style={{ width: '3.3rem' }}
+                                alt="usericon"
+                            />
+                            </Link>
                         </div>
                     </div>
                 </nav>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }

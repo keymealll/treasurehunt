@@ -31,6 +31,7 @@
 .news .card {
 	background-color: #6a6a6a;
 	border-radius: 16px;
+	border-color: #6a6a6a;
 }
 
 .news .rounded {
@@ -165,6 +166,7 @@
 .content-2-5 .card {
 	background-color: transparent;
 	border-radius: 16px;
+	border-color: transparent;
 }
 
 .content-2-5 .rounded {

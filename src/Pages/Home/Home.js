@@ -13,6 +13,8 @@ import Hero from '../../Components/Hero/Hero.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductCard from '../../Components/Cards/ProductCard';
 import NewsPromotionCard from '../../Components/Cards/NewsPromotionCard';
+import Malaysiamap from '/Users/abdullahkamil/Documents/IUKL/Project/treasurehunt/src/SVG/west malaysia.svg'
+
 
 import Ipoh from '../../SVG/Ipoh.png';
 import GoldElement from '../../SVG/GoldElement.png';
@@ -25,6 +27,10 @@ import Three from '../../SVG/3.png';
 SwiperCore.use([Navigation]);
 
 export const Home = () => {
+  // dont use setState in constructor, initialize state instead
+  const [cardView, setCardView] = useState(1)
+  const [space, setSpace] = useState(100)
+
   return (
     <body className='homebody'>
       <Navbar />
@@ -48,13 +54,65 @@ export const Home = () => {
         </div>
       </section>
 
+
+      <section
+        className="h-100 w-100"
+        style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '6rem' }}
+      >
+
+        <div
+          className="container-xxl mx-auto p-0 position-relative header-2-3"
+          style={{ fontFamily: 'Poppins, sans-serif' }}
+        >
+          <div>
+            <div className="mx-auto d-flex flex-lg-row flex-column hero">
+              <div
+                className="left-column text-center d-flex justify-content-center pe-0 "
+              >
+                {/* <div className='firstsectioncontainerone'>
+                  <h3 className='firstsectioncontaineroneHeader'>Malaysia First <br />Treasure Hunt Event</h3>
+                  <br />
+
+                  <h3 className='firstsectioncontainertwoHeader'>Existing Rewards Worth <br /></h3>
+                  <h3 className='firstsectioncontainerthreeHeader'>$123,456,789</h3>
+                  <img className='firstsectioncontainerfourImgOne' src={GoldElement} />
+                  <br />
+                  <img className='firstsectioncontainerfourImgTwo' src={HuntLogo} />
+                </div> */}
+                <img
+                  id="leftcolumn-image"
+                  className="island-image-hunt h-auto"
+                  src={Malaysiamap}
+                  style={{ width: '95%' }}
+                  alt="island"
+                />
+              </div>
+
+              <div
+                className="right-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center"
+              >
+                <div className='firstsectioncontainerfive'>
+                  <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                    <SwiperSlide><ProductCard data={{ location: 'Ipoh ', sublocation: 'Perak1', imgSrc: Ipoh, title: 'Cave Hunt', description: 'Ipoh is a city in northwestern Malaysia, known as a gateway to the Cameron Highlands hill station. In the former Hakka Miners’ Club, Han Chin Pet Soo is a museum about the tin-mining industry and Hakka community.' }} /></SwiperSlide>
+                    <SwiperSlide><ProductCard data={{ location: 'Ipoh ', sublocation: 'Perak2', imgSrc: Ipoh, title: 'Cave Hunt', description: 'Ipoh is a city in northwestern Malaysia, known as a gateway to the Cameron Highlands hill station. In the former Hakka Miners’ Club, Han Chin Pet Soo is a museum about the tin-mining industry and Hakka community.' }} /></SwiperSlide>
+                    <SwiperSlide><ProductCard data={{ location: 'Ipoh ', sublocation: 'Perak3', imgSrc: Ipoh, title: 'Cave Hunt', description: 'Ipoh is a city in northwestern Malaysia, known as a gateway to the Cameron Highlands hill station. In the former Hakka Miners’ Club, Han Chin Pet Soo is a museum about the tin-mining industry and Hakka community.' }} /></SwiperSlide>
+                  </Swiper>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* Carousel */}
       <section className="h-100 w-100" style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '6rem' }}>
         <div className="content-2-5 container-xxl mx-auto p-0 position-relative" style={{ fontFamily: 'Poppins, sans-serif' }}>
           <Swiper
-            slidesPerView={3}
-            spaceBetween={0}
-            slidesPerGroup={3}
+            slidesPerView={cardView}
+            spaceBetween={space}
+            slidesPerGroup={cardView}
             loop={true}
             loopFillGroupWithBlank={true}
             navigation={true}
