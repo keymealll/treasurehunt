@@ -27,14 +27,14 @@ import Three from '../../SVG/3.png';
 SwiperCore.use([Navigation]);
 
 export const Home = () => {
-  // dont use setState in constructor, initialize state instead
+
   const [cardView, setCardView] = useState(1)
   const [space, setSpace] = useState(100)
 
   return (
     <body className='homebody'>
       <Navbar />
-      <section className='firstsection '>
+      <section className='firstsection'>
         <div className='firstsectioncontainerone'>
           {/* <h3 className='firstsectioncontaineroneHeader'>Malaysia First <br />Treasure Hunt Event</h3> */}
           <br />
@@ -54,10 +54,10 @@ export const Home = () => {
         </div>
       </section>
 
-
+      {/* mobile version */}
       <section
-        className="h-100 w-100"
-        style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '6rem' }}
+        className="h-100 w-100 mobile-first-section"
+        style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a' }}
       >
 
         <div
@@ -106,13 +106,45 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Carousel */}
-      <section className="h-100 w-100" style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '6rem' }}>
+      {/* Carousel Mobile */}
+      <section className="h-100 w-100 carousel-mobile" style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '6rem' }}>
         <div className="content-2-5 container-xxl mx-auto p-0 position-relative" style={{ fontFamily: 'Poppins, sans-serif' }}>
           <Swiper
             slidesPerView={cardView}
             spaceBetween={space}
             slidesPerGroup={cardView}
+            loop={true}
+            loopFillGroupWithBlank={true}
+            navigation={true}
+            modules={[Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide><NewsPromotionCard data1={{ imgSrc: One, by: 'Post by:Admin', date: '20 August 2022', title: 'Do treasure hunters still exist?How to be a Treasure Hunter?', description: 'Buried and hidden treasure may be the stuff of legend and film, but treasure hunters exist.' }} /></SwiperSlide>
+            <SwiperSlide><NewsPromotionCard data1={{ imgSrc: Two, by: 'Post by:Admin', date: '20 August 2022', title: 'Treasure Hunt Promotion! Enjoy the cheapest tickets in one place! ', description: 'Take your time and read our latest news to improve your account.' }} /></SwiperSlide>
+            <SwiperSlide><NewsPromotionCard data1={{ imgSrc: Three, by: 'Post by:Admin', date: '20 August 2022', title: 'What is a treasure hunt and how does it work?', description: 'You set up a treasure hunt by hiding clues and the treasure. The clues can be simple drawings.' }} /></SwiperSlide>
+            <SwiperSlide><NewsPromotionCard data1={{ imgSrc: One, by: 'Post by:Admin', date: '20 August 2022', title: 'Do treasure hunters still exist?How to be a Treasure Hunter?', description: 'Buried and hidden treasure may be the stuff of legend and film, but treasure hunters exist.' }} /></SwiperSlide>
+            <SwiperSlide><NewsPromotionCard data1={{ imgSrc: Two, by: 'Post by:Admin', date: '20 August 2022', title: 'Treasure Hunt Promotion! Enjoy the cheapest tickets in one place! ', description: 'Take your time and read our latest news to improve your account.' }} /></SwiperSlide>
+            <SwiperSlide><NewsPromotionCard data1={{ imgSrc: Three, by: 'Post by:Admin', date: '20 August 2022', title: 'What is a treasure hunt and how does it work?', description: 'You set up a treasure hunt by hiding clues and the treasure. The clues can be simple drawings.' }} /></SwiperSlide>
+          </Swiper>
+        </div>
+        <div className="text-center p-3 pt-5">
+          <button
+            type="button"
+            class="btn btn-outline-light"
+            style={{ fontWeight: 500, fontSize: '24px', padding: '0.5rem 2.5rem' }}
+          >
+            See All
+          </button>
+        </div>
+      </section>
+
+      {/* Carousel */}
+      <section className="h-100 w-100 carousel" style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '6rem' }}>
+        <div className="content-2-5 container-xxl mx-auto p-0 position-relative" style={{ fontFamily: 'Poppins, sans-serif' }}>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={2}
+            slidesPerGroup={3}
             loop={true}
             loopFillGroupWithBlank={true}
             navigation={true}

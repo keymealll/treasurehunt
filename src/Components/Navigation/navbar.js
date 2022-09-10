@@ -4,9 +4,12 @@ import '../Navigation/navbar.css'
 import Logo from '../Navigation/IECLogo.png'
 import { Link } from 'react-router-dom'
 import usericon from '/Users/abdullahkamil/Documents/IUKL/Project/treasurehunt/src/SVG/user account icon.svg'
-
+import $ from 'jquery'
 
 export default function Navbar() {
+    $('.modal-backdrop').remove();
+    $('body').removeClass("modal-open");
+
     return (
         <div className="h-100 w-100 pb-3" style={{ boxsizing: 'border-box', backgroundColor: '#2a2a2a', }}>
             <div className="container-xxl mx-auto p-0 position-relative header-2" style={{ fontFamily: 'Poppins, sans-serif' }}>
@@ -34,6 +37,7 @@ export default function Navbar() {
                         role="dialog"
                         aria-labelledby="targetModalLabel"
                         aria-hidden="true"
+                        data-backdrop=""
                     >
                         <div className="modal-dialog" role="document">
                             <div
