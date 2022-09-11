@@ -77,10 +77,10 @@ export default function Navbar() {
                                             <Link className="nav-link" to="/thehunts"
                                             >The Hunts</Link>
                                         </li>
-                                        <li className="nav-item">
+                                        {/* <li className="nav-item">
                                             <Link className="nav-link" to="/news"
                                             >News & Promotion</Link>
-                                        </li>
+                                        </li> */}
                                         <li className="nav-item">
                                             <a className="nav-link" href="#">Enquiry</a>
                                         </li>
@@ -109,10 +109,10 @@ export default function Navbar() {
                                 <Link className="nav-link" to='/thehunts'
                                 >The Hunts</Link>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link className="nav-link" to='/news'
                                 >News & Promotion</Link>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <a className="nav-link" href="/enquiry">Enquiry</a>
                             </li>

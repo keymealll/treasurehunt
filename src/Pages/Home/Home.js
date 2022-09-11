@@ -1,5 +1,4 @@
-import React, { useRef, useState } from 'react';
-
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/navigation";
@@ -9,7 +8,6 @@ import SwiperCore from "swiper/core";
 
 import Footer from '../../Components/Footer/Footer.js'
 import Navbar from '../../Components/Navigation/navbar.js'
-import Hero from '../../Components/Hero/Hero.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductCard from '../../Components/Cards/ProductCard';
 import NewsPromotionCard from '../../Components/Cards/NewsPromotionCard';
@@ -23,14 +21,13 @@ import AppDemo from '../../SVG/AppDemo.png';
 import One from '../../SVG/1.png';
 import Two from '../../SVG/2.png';
 import Three from '../../SVG/3.png';
+import GooglePlay from '../../Components/Button/GooglePlay';
+import { Link } from 'react-router-dom';
+import AppStore from '../../Components/Button/AppStore';
 
 SwiperCore.use([Navigation]);
 
 export const Home = () => {
-
-  const [cardView, setCardView] = useState(1)
-  const [space, setSpace] = useState(100)
-
   return (
     <body className='homebody'>
       <Navbar />
@@ -41,9 +38,9 @@ export const Home = () => {
 
           <h3 className='firstsectioncontainertwoHeader'>Existing Rewards Worth <br /></h3>
           <h3 className='firstsectioncontainerthreeHeader'>$123,456,789</h3>
-          <img className='firstsectioncontainerfourImgOne' src={GoldElement} />
+          <img className='firstsectioncontainerfourImgOne' src={GoldElement} alt={'goldelement'} />
           <br />
-          <img className='firstsectioncontainerfourImgTwo' src={HuntLogo} />
+          <img className='firstsectioncontainerfourImgTwo' src={HuntLogo} alt={'goldelement'} />
         </div>
         <div className='firstsectioncontainerfive'>
           <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
@@ -108,18 +105,18 @@ export const Home = () => {
 
       {/* Carousel Mobile */}
       <section className="h-100 w-100 carousel-mobile" style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '6rem' }}>
-        <div className="content-2-5 container-xxl mx-auto p-0 position-relative" style={{ fontFamily: 'Poppins, sans-serif' }}>
+        <div className="carousel-card container-xxl mx-auto p-0 position-relative" style={{ fontFamily: 'Poppins, sans-serif' }}>
           <Swiper
-            slidesPerView={cardView}
-            spaceBetween={space}
-            slidesPerGroup={cardView}
+            slidesPerView={1}
+            spaceBetween={100}
+            slidesPerGroup={1}
             loop={true}
             loopFillGroupWithBlank={true}
             navigation={true}
             modules={[Navigation]}
             className="mySwiper"
           >
-            <SwiperSlide><NewsPromotionCard data1={{ imgSrc: One, by: 'Post by:Admin', date: '20 August 2022', title: 'Do treasure hunters still exist?How to be a Treasure Hunter?', description: 'Buried and hidden treasure may be the stuff of legend and film, but treasure hunters exist.' }} /></SwiperSlide>
+            <SwiperSlide><NewsPromotionCard data1={{ imgSrc: One, by: 'Post by:Admin', date: '20 August 2022', title: 'Do treasure hunters still exist? How to be a Treasure Hunter?', description: 'Buried and hidden treasure may be the stuff of legend and film, but treasure hunters exist.' }} /></SwiperSlide>
             <SwiperSlide><NewsPromotionCard data1={{ imgSrc: Two, by: 'Post by:Admin', date: '20 August 2022', title: 'Treasure Hunt Promotion! Enjoy the cheapest tickets in one place! ', description: 'Take your time and read our latest news to improve your account.' }} /></SwiperSlide>
             <SwiperSlide><NewsPromotionCard data1={{ imgSrc: Three, by: 'Post by:Admin', date: '20 August 2022', title: 'What is a treasure hunt and how does it work?', description: 'You set up a treasure hunt by hiding clues and the treasure. The clues can be simple drawings.' }} /></SwiperSlide>
             <SwiperSlide><NewsPromotionCard data1={{ imgSrc: One, by: 'Post by:Admin', date: '20 August 2022', title: 'Do treasure hunters still exist?How to be a Treasure Hunter?', description: 'Buried and hidden treasure may be the stuff of legend and film, but treasure hunters exist.' }} /></SwiperSlide>
@@ -201,8 +198,8 @@ export const Home = () => {
                   <img className='thirdsection-HuntLogo' src={HuntLogo} alt='logo' />
                   <h3 className='thirdsection-h'>Download it Now! <br /> Start Your Hunt!</h3>
                   <p className='thirdsection-p'>Shopping spress are now so much easier, with the world's top brands at your fingertips. Simply click and go to discover the best finds in fashion, electronics, homeware, and more! </p>
-                  <button>Get it on Google Play</button>
-                  <button>Get it on App Store</button>
+                  <Link to={'#'}><GooglePlay /></Link>
+                  <Link to={'#'}><AppStore /></Link>
                 </div>
 
               </div>

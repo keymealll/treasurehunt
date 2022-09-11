@@ -20,21 +20,20 @@ const ProductCard = props => {
           </Card.Title>
           <Card.Img className='product-card-image' variant='top' src={imgSrc} />
           <Card.Body>
-            <Card.Title className='product-card-title' style={{ fontSize: '30px' }}>{title}</Card.Title>
+            <Card.Title className='product-card-title title'>{title}</Card.Title>
             <Card.Title className='product-card-description'>{description}</Card.Title>
           </Card.Body>
-          <div class="text-center p-3">
+          <div class="text-center p-3 ">
             <button
               type="button"
-              class="btn btn-light"
-              style={{ fontWeight: 500, fontSize: '18px', marginRight: '1rem' }}
+              class="btn btn-light button-card-product"
+              style={{ marginRight: '1rem' }}
             >
               Join Hunt
             </button>
             <button
               type="button"
-              class="btn btn-outline-light"
-              style={{ fontWeight: 500, fontSize: '18px' }}
+              class="btn btn-outline-light button-card-product"
             >
               Learn More
             </button>

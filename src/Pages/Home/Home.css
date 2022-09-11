@@ -11,6 +11,10 @@
 	box-sizing: border-box;
 }
 
+.homebody {
+	overflow: hidden;
+}
+
 .swiper-button-prev {
 	left: 0%;
 	color: #000 !important;
@@ -66,9 +70,7 @@
 
 	.product-card-location {
 		text-align: center;
-		padding-left: 20%;
-		padding-top: 5%;
-		padding-bottom: 5%;
+		padding: 0px auto;
 	}
 
 	.product-card-image {
@@ -76,12 +78,12 @@
 		margin-left: auto;
 		margin-right: auto;
 		width: 80% !important;
-		border-radius: 10% !important;
 	}
 
 	.product-card-title {
 		text-align: center;
 		color: #fcc018;
+		font-size: 20px !important;
 	}
 
 	.homebody .product-card-description {
@@ -94,6 +96,106 @@
 
 	.homebody .mySwiper {
 		width: 21.5rem;
+	}
+
+	.homebody .button-card-product {
+		font-size: 0.55rem;
+	}
+
+	.homebody .swiper-button-next .swiper-button-prev {
+		background-size: 2px;
+	}
+
+	.homebody .np-card-image {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 15rem;
+		height: 11rem;
+		border-radius: 16px !important;
+	}
+
+	.homebody .np-card-by {
+		opacity: 0.5;
+		font-family: "Arimo", sans-serif;
+		font-size: 12px;
+		margin-left: 2rem;
+	}
+
+	.homebody .np-card-date {
+		opacity: 0.5;
+		font-family: "Arimo", sans-serif;
+		font-size: 12px;
+		width: 18.5rem;
+	}
+
+	.homebody .np-card-title {
+		font-family: "Arimo", sans-serif;
+		width: 16rem;
+		margin-left: 2rem;
+		font-size: 12px;
+	}
+
+	.homebody .np-card-description {
+		font-family: "Arimo", sans-serif;
+		width: 14rem;
+		margin-left: 2rem;
+		font-size: 12px;
+	}
+
+	.homebody .np-read-more {
+		color: #fcc018;
+		font-size: 12px;
+		font-family: "Arimo", sans-serif;
+		width: 5.9rem;
+	}
+
+	.swiper-button-next {
+		width: 36px;
+		height: 36px;
+	}
+
+	.swiper-button-prev {
+		width: 36px;
+		height: 36px;
+	}
+
+	.swiper-button-next:after {
+		font-size: 0.7rem;
+	}
+
+	.swiper-button-prev:after {
+		font-size: 0.7rem;
+	}
+
+	.button-card-product {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	.thirdsection-AppDemo {
+		width: 55rem;
+		margin-left: 4%;
+		margin-top: 5%;
+	}
+
+	.homebody .thirdsection-HuntLogo {
+		width: 15rem;
+	}
+
+	.homebody .thirdsection-h {
+		font-size: 1.6rem;
+	}
+
+	.homebody .thirdsection-description {
+		text-align: center;
+		padding-left: 3%;
+		color: white;
+	}
+
+	.thirdsection-p {
+		font-size: 12px;
+		padding: 0rem 20rem;
 	}
 }
 
@@ -142,23 +244,21 @@
 }
 
 .product-card-location {
-	text-align: center;
-	padding-left: 20%;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	align-items: center;
 }
 
 .product-card-image {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 80% !important;
+	width: 100% !important;
 	border-radius: 10% !important;
 }
 
 .product-card-title {
 	text-align: center;
 	color: #fcc018;
+	font-size: 30px !important;
 }
 
 .product-card-description {
@@ -183,7 +283,7 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 24rem !important;
+	width: 24rem;
 	height: 21rem;
 	border-radius: 16px !important;
 }
@@ -202,18 +302,23 @@
 
 .np-card-title {
 	font-family: "Arimo", sans-serif;
-	width: 30rem;
+	width: 25rem;
 }
 
-.np-card-description {
+.homebody .np-card-description {
 	opacity: 0.5;
 	font-family: "Arimo", sans-serif;
 }
 
-.np-readmorebtn {
-	padding-left: 18.5%;
+.np-read-more {
 	color: #fcc018;
 	font-family: "Arimo", sans-serif;
+}
+
+.homebody .card {
+	background-color: transparent;
+	border-radius: 16px;
+	border-color: transparent;
 }
 
 /* ThirdSection */
@@ -222,7 +327,12 @@
 	overflow: hidden;
 }
 
-.thirdsection-AppDemo {
+.button-card-product {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.homebody .thirdsection-AppDemo {
 	width: 55rem;
 	margin-left: 4%;
 	margin-top: 5%;
@@ -242,6 +352,8 @@
 	color: white;
 }
 
-.thirdsection-p {
-	width: 30rem;
+@media (min-width: 925px) {
+	.homebody .thirdsection-p {
+		width: 30rem;
+	}
 }

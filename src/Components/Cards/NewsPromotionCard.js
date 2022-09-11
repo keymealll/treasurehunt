@@ -21,9 +21,9 @@ const NewsPromotionCard = props => {
                 <span className='np-card-by float-start'>{by}</span>
                 <span className='np-card-date float-end'>{date}</span>
               </div>
-              <p class="card-text">{title}</p>
+              <p class="np-card-title">{title}</p>
               <Card.Text className='np-card-description'>{description}</Card.Text>
-              <a class="read-more float-end" href="#">
+              <a class="np-read-more float-end" href="#">
                 Read More
               </a>
             </div>
