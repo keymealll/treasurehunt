@@ -66,16 +66,6 @@ export const Home = () => {
               <div
                 className="left-column text-center d-flex justify-content-center pe-0 "
               >
-                {/* <div className='firstsectioncontainerone'>
-                  <h3 className='firstsectioncontaineroneHeader'>Malaysia First <br />Treasure Hunt Event</h3>
-                  <br />
-
-                  <h3 className='firstsectioncontainertwoHeader'>Existing Rewards Worth <br /></h3>
-                  <h3 className='firstsectioncontainerthreeHeader'>$123,456,789</h3>
-                  <img className='firstsectioncontainerfourImgOne' src={GoldElement} />
-                  <br />
-                  <img className='firstsectioncontainerfourImgTwo' src={HuntLogo} />
-                </div> */}
                 <img
                   id="leftcolumn-image"
                   className="island-image-hunt h-auto"
@@ -95,6 +85,14 @@ export const Home = () => {
                     <SwiperSlide><ProductCard data={{ location: 'Ipoh ', sublocation: 'Perak3', imgSrc: Ipoh, title: 'Cave Hunt', description: 'Ipoh is a city in northwestern Malaysia, known as a gateway to the Cameron Highlands hill station. In the former Hakka Miners’ Club, Han Chin Pet Soo is a museum about the tin-mining industry and Hakka community.' }} /></SwiperSlide>
                   </Swiper>
                 </div>
+
+                <div className='container-sm mx-auto p-0'>
+                  <h3 className='firstsectioncontainertwoHeader'>Existing Rewards Worth <br /></h3>
+                  <h3 className='firstsectioncontainerthreeHeader'>$123,456,789</h3>
+                  <img className='firstsectioncontainerfourImgOne' src={GoldElement} alt='logo' />
+                  <br />
+                  <img className='firstsectioncontainerfourImgTwo' src={HuntLogo} alt='HuntLogo' />
+                </div>
               </div>
 
             </div>
@@ -104,7 +102,7 @@ export const Home = () => {
       </section>
 
       {/* Carousel Mobile */}
-      <section className="h-100 w-100 carousel-mobile" style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '6rem' }}>
+      <section className="h-100 w-100 carousel-mobile" style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a' }}>
         <div className="carousel-card container-xxl mx-auto p-0 position-relative" style={{ fontFamily: 'Poppins, sans-serif' }}>
           <Swiper
             slidesPerView={1}
@@ -124,11 +122,11 @@ export const Home = () => {
             <SwiperSlide><NewsPromotionCard data1={{ imgSrc: Three, by: 'Post by:Admin', date: '20 August 2022', title: 'What is a treasure hunt and how does it work?', description: 'You set up a treasure hunt by hiding clues and the treasure. The clues can be simple drawings.' }} /></SwiperSlide>
           </Swiper>
         </div>
-        <div className="text-center p-3 pt-5">
+        <div className="text-center p-3 pt-2">
           <button
             type="button"
             class="btn btn-outline-light"
-            style={{ fontWeight: 500, fontSize: '24px', padding: '0.5rem 2.5rem' }}
+            style={{ fontWeight: 500, fontSize: '18px', padding: '0.5rem 2.5rem' }}
           >
             See All
           </button>
@@ -137,7 +135,8 @@ export const Home = () => {
 
       {/* Carousel */}
       <section className="h-100 w-100 carousel" style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '6rem' }}>
-        <div className="content-2-5 container-xxl mx-auto p-0 position-relative" style={{ fontFamily: 'Poppins, sans-serif' }}>
+        <div className="content-2-5 container-xxl mx-auto p-0 position-relative" style={{ fontFamily: 'Poppins, sans-serif', width: '85%' }}>
+          <div class="swiper-button-prev" style={{ userSelect: 'auto' }}></div>
           <Swiper
             slidesPerView={3}
             spaceBetween={2}
@@ -155,6 +154,7 @@ export const Home = () => {
             <SwiperSlide><NewsPromotionCard data1={{ imgSrc: Two, by: 'Post by:Admin', date: '20 August 2022', title: 'Treasure Hunt Promotion! Enjoy the cheapest tickets in one place! ', description: 'Take your time and read our latest news to improve your account.' }} /></SwiperSlide>
             <SwiperSlide><NewsPromotionCard data1={{ imgSrc: Three, by: 'Post by:Admin', date: '20 August 2022', title: 'What is a treasure hunt and how does it work?', description: 'You set up a treasure hunt by hiding clues and the treasure. The clues can be simple drawings.' }} /></SwiperSlide>
           </Swiper>
+          <div class="swiper-button-prev" style={{ userSelect: 'auto' }}></div>
         </div>
         <div className="text-center p-3 pt-5">
           <button
@@ -170,7 +170,7 @@ export const Home = () => {
       {/* thirdsection */}
       <section
         className="h-100 w-100"
-        style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '6rem' }}
+        style={{ boxSizing: 'border-box', backgroundColor: '#2a2a2a', paddingTop: '3rem' }}
       >
 
         <div

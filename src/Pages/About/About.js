@@ -80,7 +80,7 @@ export default function About() {
 
                             {/* <!-- Right Column --> */}
                             <div
-                                class="right-column1 d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center"
+                                class="right-column1 d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center"
                             >
                                 <div class="title-text-about-big1">
                                     WHAT WE DO
@@ -120,7 +120,7 @@ export default function About() {
                         <div class="mx-auto d-flex flex-lg-row flex-column hero">
                             {/* <!-- Left Column --> */}
                             <div
-                                class="left-column justify-content-center pe-0 mt-5"
+                                class="left-column justify-content-center pe-0 mt-3"
                             >
                                 <div class="text-caption">
                                     Last but not least, IEC has the expertise and resources for effective planning, management and implementation of all kinds of creative yet challenging events that are suited to the needs of a particular organization. Any enquiry or tailored made<br />
@@ -153,13 +153,13 @@ export default function About() {
                                     </div>
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <div class="row mb-3">
+                                            <div class="row mb-4">
                                                 <div class="col">
                                                     <img src={require('../About/Collage/2.png')} width="100%" alt='img1' />
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col">
+                                                <div class="col image-mobile">
                                                     <img src={require('../About/Collage/3.png')} width="100%" alt='img1' />
                                                 </div>
                                             </div>

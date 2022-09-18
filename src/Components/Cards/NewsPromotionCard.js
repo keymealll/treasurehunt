@@ -1,6 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
 const NewsPromotionCard = props => {
   let { imgSrc, by, date, title, description } = props.data1;
@@ -22,9 +23,9 @@ const NewsPromotionCard = props => {
                 <span className='np-card-date float-end'>{date}</span>
               </div>
               <p class="np-card-title">{title}</p>
-              <Card.Text className='np-card-description'>{description}</Card.Text>
-              <a class="np-read-more float-end" href="#">
-                Read More
+              <div className='np-card-description'>{description}</div>
+              <a class="np-read-more float-start mt-2" href="#">
+                <span> &gt; Read More</span>
               </a>
             </div>
           </div>

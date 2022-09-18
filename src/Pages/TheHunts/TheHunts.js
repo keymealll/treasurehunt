@@ -640,7 +640,7 @@ export default function TheHunts() {
                             >
                                 <h1
                                     class="title-text-big"
-                                    style={{ lineHeight: 1.5, inlineSize: 'max-content' }}
+                                    style={{ lineHeight: 1.5 }}
                                 >
                                     An <br />
                                     <span style={{ color: '#ffcc4d', textTransform: 'uppercase' }}

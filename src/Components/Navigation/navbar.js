@@ -14,12 +14,16 @@ export default function Navbar() {
         <div className="h-100 w-100 pb-3" style={{ boxsizing: 'border-box', backgroundColor: '#2a2a2a', }}>
             <div className="container-xxl mx-auto p-0 position-relative header-2" style={{ fontFamily: 'Poppins, sans-serif' }}>
                 <nav className="navbar navbar-expand-lg navbar-dark">
-                    <Link to='/'>
+                    <Link className='navbar-brand' to='/'>
                         <img
-                            style={{ marginRight: '0.75rem', width: '7.5rem' }}
+                            style={{ marginRight: '0.75rem', width: '8.5rem' }}
                             src={Logo}
                             alt="logo-iec"
                         />
+                        <div className='caption-logo'>
+                            <p className='caption-index'>Malaysia First</p>
+                            <p className='caption-index-2'>Treasure Hunt Event</p>
+                        </div>
                     </Link>
                     <button
                         className="navbar-toggler border-0"
@@ -82,7 +86,7 @@ export default function Navbar() {
                                             >News & Promotion</Link>
                                         </li> */}
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Enquiry</a>
+                                            <a className="nav-link" href="/enquiry">Enquiry</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -97,7 +101,7 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    <div className="collapse navbar-collapse" id="navbarTogglerDemo">
+                    <div className="collapse navbar-collapse align-self-start" id="navbarTogglerDemo">
                         <ul className="navbar-nav me-auto mt-2 mt-lg-0">
                             <li className="nav-item">
                                 <Link className="nav-link" to='/'>Home</Link>
@@ -105,7 +109,7 @@ export default function Navbar() {
                             <li className="nav-item">
                                 <Link className="nav-link" to='/about'>Who is IEC</Link>
                             </li>
-                            <li className="nav-item active">
+                            <li className="nav-item">
                                 <Link className="nav-link" to='/thehunts'
                                 >The Hunts</Link>
                             </li>
@@ -117,7 +121,7 @@ export default function Navbar() {
                                 <a className="nav-link" href="/enquiry">Enquiry</a>
                             </li>
                         </ul>
-                        <div className='container-fluid' style={{ width: '19rem', }}>
+                        <div className='container-fluid m-2' style={{ width: '19rem', }}>
                             <button className="btn btn-fill border-0" style={{ marginRight: '2rem', }}>Join The Hunt</button>
                             <Link className='login' to='/login'><img
                                 src={usericon}

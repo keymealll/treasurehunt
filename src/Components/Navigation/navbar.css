@@ -132,6 +132,10 @@
 	transition: 0.3s;
 }
 
+.header-2 .caption-logo {
+	display: none;
+}
+
 @media (min-width: 576px) {
 	.header-2 .modal-item .modal-dialog {
 		max-width: 95%;
@@ -161,11 +165,21 @@
 	}
 
 	.header-2 .navbar {
-		padding: 3rem 2rem;
+		padding: 3rem 2rem 0rem;
 	}
 
 	.header-2 .title-text-big {
 		font-size: 3.75rem;
 		line-height: 1.2;
+	}
+
+	.header-2 .caption-logo {
+		display: block;
+	}
+
+	.header-2 .caption-index {
+		font-weight: 600;
+		margin-bottom: 0.1rem;
+		margin-top: 1.25rem;
 	}
 }

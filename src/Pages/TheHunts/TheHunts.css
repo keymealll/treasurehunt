@@ -127,10 +127,24 @@
 	margin-top: 9rem;
 }
 
+.background-innovative .title-text-big {
+	inline-size: max-content;
+}
+
 @media only screen and (max-width: 767px) {
 	.content-2-3 .arrow-card-right {
 		margin-top: 0;
 		rotate: 90deg;
+	}
+
+	.background-innovative .title-text-big {
+		inline-size: auto;
+		text-align: start;
+	}
+
+	.background-innovative .title-text-small {
+		inline-size: auto;
+		text-align: start;
 	}
 }
 
@@ -166,21 +180,19 @@
 }
 
 .header-2-4 .left-column {
-	margin-bottom: 2.75rem;
 	width: 100%;
 	margin-right: 30rem;
 }
 
 .header-2-4 .title-text-big {
-	font: 600 2.25rem/2.5rem Poppins, sans-serif;
+	font: 600 2rem/2.5rem Poppins, sans-serif;
 	margin-bottom: 2rem;
 	color: #ffffff;
 }
 
 .header-2-4 .title-text-small {
-	font: 300 2.25rem/2.5rem Poppins, sans-serif;
+	font: 400 1.25rem/2.5rem Poppins, sans-serif;
 	line-height: 1.2;
-	text-align: right;
 	color: #ffffff;
 }
 
@@ -194,7 +206,7 @@
 	}
 
 	.header-2-4 .title-text-big {
-		font-size: 3rem;
+		font-size: 4rem;
 		line-height: 1.2;
 	}
 }

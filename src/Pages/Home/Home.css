@@ -39,16 +39,185 @@
 	background-size: 120%;
 }
 
-.product-card-description {
-	font-size: 16px;
-}
-
 .mobile-first-section {
 	display: none;
 }
 
 .carousel-mobile {
 	display: none;
+}
+
+@media (max-width: 850px) {
+	.firstsection {
+		display: none;
+	}
+
+	.homebody .carousel {
+		display: none;
+	}
+
+	.mobile-first-section {
+		display: block;
+	}
+
+	.carousel-mobile {
+		display: block;
+	}
+
+	.product-card-image {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80% !important;
+	}
+
+	.product-card-title {
+		text-align: center;
+		color: #fcc018;
+		font-size: 20px !important;
+	}
+
+	.product-btnContainer {
+		margin-bottom: 10%;
+	}
+
+	.homebody .mySwiper {
+		width: 21.5rem;
+	}
+
+	.homebody .swiper-button-next .swiper-button-prev {
+		background-size: 2px;
+		width: 64px;
+		height: 64px;
+	}
+
+	.firstsectioncontainerfive {
+		margin-right: 0% !important;
+	}
+
+	.homebody .mySwiper {
+		width: 34.5rem;
+	}
+
+	.homebody .product-card-description {
+		font-size: 0.85rem;
+	}
+
+	.homebody .np-card-image {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 20rem;
+		height: 11rem;
+		border-radius: 16px !important;
+	}
+
+	.homebody .np-card-by {
+		opacity: 0.5;
+		font-family: "Arimo", sans-serif;
+		font-size: 12px;
+	}
+
+	.homebody .np-card-date {
+		opacity: 0.5;
+		font-family: "Arimo", sans-serif;
+		font-size: 12px;
+	}
+
+	.homebody .np-card-title {
+		font-family: "Arimo", sans-serif;
+		width: 20rem;
+		font-size: 16px;
+	}
+
+	.homebody .card-body {
+		width: fit-content;
+		align-self: center;
+	}
+
+	.homebody .np-card-description {
+		font-family: "Arimo", sans-serif;
+		width: 20rem;
+		font-size: 16px;
+	}
+
+	.homebody .np-read-more {
+		color: #fcc018;
+		font-size: 16px;
+		font-family: "Arimo", sans-serif;
+	}
+
+	.swiper-button-next:after {
+		font-size: 2rem;
+	}
+
+	.swiper-button-prev:after {
+		font-size: 2rem;
+	}
+
+	.mobile-first-section .button-card-product {
+		font-size: 1rem;
+		font-weight: 700;
+	}
+
+	.thirdsection-AppDemo {
+		width: 55rem;
+		margin-left: 4%;
+		margin-top: 5%;
+	}
+
+	.homebody .thirdsection-HuntLogo {
+		width: 15rem;
+	}
+
+	.homebody .thirdsection-h {
+		font-size: 1.6rem;
+	}
+
+	.homebody .thirdsection-description {
+		text-align: center;
+		padding-left: 3%;
+		color: white;
+	}
+
+	.thirdsection-p {
+		font-size: 12px;
+		padding: 0rem 20rem;
+	}
+
+	.mobile-first-section .firstsectioncontainertwoHeader {
+		margin-top: 2rem;
+		color: white;
+		font-size: 1.5rem;
+		font-family: "Arimo", sans-serif;
+	}
+
+	.mobile-first-section .firstsectioncontainerthreeHeader {
+		color: white;
+		font-size: 3rem;
+		font-family: "Arimo", sans-serif;
+	}
+
+	.mobile-first-section .firstsectioncontainerfourImgOne {
+		width: 30rem;
+		margin-left: 0%;
+	}
+
+	.mobile-first-section .firstsectioncontainerfourImgTwo {
+		width: 18rem;
+		margin-left: 0%;
+	}
+
+	.mobile-first-section .product-location {
+		font-size: 2.5rem;
+		margin-right: 0.2rem;
+	}
+
+	.mobile-first-section .product-sublocation {
+		font-size: 1.35rem;
+		align-self: center;
+		text-transform: capitalize;
+	}
 }
 
 @media (max-width: 650px) {
@@ -66,11 +235,6 @@
 
 	.carousel-mobile {
 		display: block;
-	}
-
-	.product-card-location {
-		text-align: center;
-		padding: 0px auto;
 	}
 
 	.product-card-image {
@@ -96,10 +260,6 @@
 
 	.homebody .mySwiper {
 		width: 21.5rem;
-	}
-
-	.homebody .button-card-product {
-		font-size: 0.55rem;
 	}
 
 	.homebody .swiper-button-next .swiper-button-prev {
@@ -147,7 +307,7 @@
 		color: #fcc018;
 		font-size: 12px;
 		font-family: "Arimo", sans-serif;
-		width: 5.9rem;
+		margin-left: 2rem;
 	}
 
 	.swiper-button-next {
@@ -168,9 +328,9 @@
 		font-size: 0.7rem;
 	}
 
-	.button-card-product {
-		font-size: 18px;
-		font-weight: 500;
+	.mobile-first-section .button-card-product {
+		font-size: 0.6rem;
+		font-weight: 700;
 	}
 
 	.thirdsection-AppDemo {
@@ -196,6 +356,38 @@
 	.thirdsection-p {
 		font-size: 12px;
 		padding: 0rem 20rem;
+	}
+
+	.mobile-first-section .firstsectioncontainertwoHeader {
+		margin-top: 2rem;
+		color: white;
+		font-size: 1rem;
+		font-family: "Arimo", sans-serif;
+	}
+
+	.mobile-first-section .firstsectioncontainerthreeHeader {
+		color: white;
+		font-size: 2rem;
+		font-family: "Arimo", sans-serif;
+	}
+
+	.mobile-first-section .firstsectioncontainerfourImgOne {
+		width: 20rem;
+	}
+
+	.mobile-first-section .firstsectioncontainerfourImgTwo {
+		width: 10rem;
+	}
+
+	.mobile-first-section .product-location {
+		font-size: 1.5rem;
+		margin-right: 0.2rem;
+	}
+
+	.mobile-first-section .product-sublocation {
+		font-size: 0.9rem;
+		align-self: center;
+		text-transform: capitalize;
 	}
 }
 
@@ -236,10 +428,10 @@
 
 .firstsectioncontainerfive {
 	text-align: center;
-	width: 35rem !important;
+	width: 35rem;
 	float: right;
-	margin-right: 5% !important;
-	margin-top: -35% !important;
+	margin-right: 5%;
+	margin-top: -35%;
 	background-color: transparent;
 }
 
@@ -261,12 +453,22 @@
 	font-size: 30px !important;
 }
 
-.product-card-description {
-	text-align: center;
-}
-
 .product-btnContainer {
 	margin-bottom: 10%;
+}
+
+.product-location {
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-right: 0.5rem;
+}
+
+.product-sublocation {
+	font-size: 1.2rem;
+	font-weight: 500;
+	align-self: center;
+	text-transform: capitalize;
 }
 
 /* .product-card-buybtn {
@@ -294,15 +496,13 @@
 }
 
 .np-card-date {
-	padding-left: 63%;
-	margin-top: -7%;
 	opacity: 0.5;
 	font-family: "Arimo", sans-serif;
 }
 
 .np-card-title {
 	font-family: "Arimo", sans-serif;
-	width: 25rem;
+	width: 22rem;
 }
 
 .homebody .np-card-description {
@@ -327,9 +527,10 @@
 	overflow: hidden;
 }
 
-.button-card-product {
-	font-size: 18px;
-	font-weight: 500;
+.firstsection .button-card-product {
+	font-size: 1.25rem;
+	font-weight: 700;
+	padding: 0.25rem 1.25rem;
 }
 
 .homebody .thirdsection-AppDemo {
